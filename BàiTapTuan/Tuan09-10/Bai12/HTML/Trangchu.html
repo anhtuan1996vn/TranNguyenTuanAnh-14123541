@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../CSS/Mycss.css" rel="stylesheet" />
+    <script language="javascript"  type="text/javascript">
+        var idq;
+        var i = 0;
+        function change() {
+            var color = new Array();
+            color[0] = "url(../Images/combo2.jpg)";
+            color[1] = "url(../Images/combo.jpg)";
+            /*color[2] = "URL(../Images/KhoaiLang.jpg)";*/
+            document.getElementById("Header").style.backgroundImage = color[i];
+            i = 1 - i;
+            idq = setTimeout("change()", 5000);
+        }        
+    </script>
+</head>
+<body onload="change();">
+    <div id="container">
+        <a href="combo.html">
+            <header id="Header" style="background-repeat:no-repeat;background-size:cover;background-size:100% 300px;"></header>
+        </a>
+        <div id="top">
+            <div id="search">
+                <form class="searchform" action="" method="get">
+                    <input class="s" onfocus="if (this.value == 'Bạn cần tìm gì?...') { this.value = ''; }" onblur="    if (this.value == '') { this.value = 'Bạn cần tìm gì?...'; }" type="text" name="s" value="Bạn cần tìm gì?..." />
+                    <input class="searchsubmit" type="submit" value="Search" />
+                </form>
+            </div>
+            <!--<img src="../Images/Logo.png" alt="logo" style="height:30px; width:70px; margin-right:15px;" /
+            <div id="sele">
+                <select>
+                    <option>TP.HCM</option>
+                    <option>HÀ NỘI</option>
+                    <option>VŨNG TÀU</option>
+                    <option>CẦN THƠ</option>
+                    <option>ĐÀNG NẴNG</option>
+                </select>
+                <select>
+                    <option>Ăn Uống</option>
+                    <option>Nhà Hàng</option>
+                </select>
+            </div>  >-->
+            <!--<div class="searchform cf">
+                <input type="text" placeholder="Bạn cần tìm?">
+                <button type="submit">Search</button>
+            </div>-->
+            <!--<input type="text" name="seach" style="width:200px;" />
+            <input type="submit" value="" style="border-style: none; background: url('../Images/searchbutton3.gif') no-repeat; width: 24px; height: 20px;" />-->
+            <!--<span>Tên đăng nhập: </span><input type="text" name="username" style="width: 100px;">
+            <span>Mật khẩu: </span><input type="text" name="password" style="width: 100px;">
+            <input type="submit" name="login" value="Login" style="border-style:none;" />
+            <span>Quên mật khẩu?</span>
+            <span>Đăng ký</span>-->
+        </div>
+        <section>
+            <!--<div>
+                <nav id="left">
+                    DANH MỤC
+                    <ul>
+                        <li><a href="Trangchu.html">Trang Chủ</a></li>
+                        <li><a>Đặt Bàn</a></li>
+                        <li><a>Giao Hàng</a></li>
+                    </ul>
+                </nav>
+            </div>-->
+            <div id="right">
+                <div id="img">
+                    <a href="Misingapore.html"><img src="../Images/Misingapore.jpg" alt="Ảnh Mì" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="Misingapore.html">Friends By Pontian - Mì Singapore</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/duchoang.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                       <a href="https://www.facebook.com/hoang.tonduc">Đức Hoàng</a>
+                   </div>
+                    <div id="comment">Mì rẻ lại ngon</div>
+                 </div>
+                <div id="img">
+                    <a href="Misingapore.html"><img src="../Images/sushi.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="Sushi.html">Nori Express - Sushi - Hồ Tùng Mậu</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/dinhHiep.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100011125745896&fref=ufi">Đình Hiệp</a>
+                    </div>
+                    <div id="comment">Đồ ăn ngon lại rẻ m sẻ quay laị</div>
+                </div>
+                <div id="img">
+                    <a href="pizzalnn.html"><img src="../Images/pizzalnn.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="pizzalnn.html">Pizza Inn - Nguyễn Trãi</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/dinhan.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/ty.an.77">Đình Ân</a>
+                    </div>
+                    <div id="comment">Cái này mình ăn rồi thua mẹ mình làm</div>
+                </div>
+                <div id="img">
+                    <a href="MonkeyInBlackCafe.html"><img src="../Images/monkeycafe.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="MonkeyInBlackCafe.html">Monkey In Black Cafe - Lê Văn Sỹ</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/votai.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/tai.vohieu">Võ Tài</a>
+                    </div>
+                    <div id="comment">uống cũng được và rẻ nữa</div>
+                </div>
+                <div id="img">
+                    <a href="bankararamen.html"><img src="../Images/ramen.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="bankararamen.html">Bankara Ramen - Saigon Centre</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/seannguyen.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/sean.nguyen.123276">Nguyễn Sean</a>
+                    </div>
+                    <div id="comment">Khá ngon giá cả hợp lý nữa</div>
+                </div>
+                <div id="img">
+                    <a href="BanhCanhCua.html"><img src="../Images/banhcanhcua.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="BanhCanhCua.html">Bánh Canh Cua - Trần Khắc Chân</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/daohoa.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100010638978949">Đào Hòa</a>
+                    </div>
+                    <div id="comment">KaKa. cái này ngon nè</div>
+                </div>
+                <div id="img">
+                    <a href="BunDaucauGo.html"><img src="../Images/bundaucaugo.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="BunDaucauGo.html">Bún Đậu Cầu Gỗ - Phan Xích Long</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/lukas.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/youandproit">Lukas Nguyễn</a>
+                    </div>
+                    <div id="comment">cái này để ăn chơ chứ nhậu nhẹt gì</div>
+                </div>
+                <div id="img">
+                    <a href="bundaumamtop.html"><img src="../Images/bundaumamtom.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="bundaumamtop.html">Bún Đậu Mắm Tôm A Chảnh</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/lam.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/phan.lam.1865">Phan Lâm</a>
+                    </div>
+                    <div id="comment">Ngon quá mấy đứa ơiiiiii!!!!!</div>
+                </div>
+                <div id="img">
+                    <a href="cafehuynh.html"><img src="../Images/cafequynh.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="cafehuynh.html">Cafe Quỳnh</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/thanh.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100006029951446">Thạnh Ngáo</a>
+                    </div>
+                    <div id="comment">Ở đây tưởng nhỏ ai dè lớn quá</div>
+                </div>
+                <div id="img">
+                    <a href="EffocCafe.html"><img src="../Images/efoc.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="EffocCafe.html">Effoc Cafe - Nguyễn Văn Tráng</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/thuan.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/tamuine.luonggiathuan">Akatsuki Pain</a>
+                    </div>
+                    <div id="comment">Cái này t không ăn</div>
+                </div>
+                <div id="img">
+                    <a href="lausateuyenuong.html"><img src="../Images/lausateuyenuong.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="lausateuyenuong.html">Lẩu Sa Tế Uyên Ương</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/canh.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100008067615894">Công Anh</a>
+                    </div>
+                    <div id="comment">Móm ăn trên thế giới a cân hết</div>
+                </div>
+                <div id="img">
+                    <a href="Micayotma.html"><img src="../Images/Micayotma.jpg" alt="Ảnh" style="width:300px; height:200px;" /></a>
+                    <div id="avata">
+                        <img src="../Images/danhgia.png" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="Micayotma.html">Mì Cay Ớt Ma - Lê Văn Thọ</a>
+                    </div><br />
+                    <div id="avata">
+                        <img src="../Images/hoa.jpg" alt="avt" style="width:30px; height:30px;" />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100005290155246">Ngọc Hóa</a>
+                    </div>
+                    <div id="comment">Có e mào muốn đi ăn cùng a ko?</div>
+                </div>
+            </div>
+        </section>
+        <input type="button" value="Xem Thêm" style="height:50px; width:966px; margin-left:200px; background-color:#0094ff; margin-bottom:10px" />
+        <footer>
+            Võ Ngọc Hào - 14082141 - Hồ Huê Hào - 14106451 DHKTPM10ATT<br />
+            Lầu 8, Tòa nhà Jabes 1, 244 Cống Quỳnh, P. Phạm Ngũ Lão, Quận 1, TP.HCM<br />
+            Điện thoại: 09345 18482 Email: haovo7640@gmail.com<br />
+            Số giấy phép ĐKKD: 14082141 do sở Kế hoạch và Đầu Tư TPHCM cấp ngày 12/09/2016
+        </footer>
+    </div>
+</body>
+</html>

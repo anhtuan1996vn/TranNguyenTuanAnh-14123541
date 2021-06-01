@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Trang chủ">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Trần Nguyễn Tuấn Anh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Stylesheet.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="headerstyle">
+        <div class="container d-flex onlyshowweb">
+            <a href="./TrangChu.html"><img class="imgLogo" src="./images/LogoNuocHoa.png"></a>
+            <div style="margin: auto;">
+                <div class="input-group d-flex">
+                    <div class="form-outline">
+                        <input id="search-focus" type="search" id="form1" class="form-control" placeholder="Tìm kiếm" />
+                    </div>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <ul class="d-flex headermenu">
+                <li class="header-txt"><a href="./TrangChu.html">TRANG CHỦ</a></li>
+                <li class="header-txt"><a href="./GioiThieu.html">GIỚI THIỆU</a></li>
+                <li class="header-txt"><a href="./ChinhSach.html">CHÍNH SÁCH BẢO HÀNH</a></li>
+                <li class="header-txt"><a href="./TinTuc.html">TIN TỨC</a></li>
+            </ul>
+            <div class="header-login"><a href="./DangNhap.html">Đăng Nhập</a> | <a href="./DangKy.html">Đăng ký</a>
+            </div>
+            <div style="margin: auto;"><a href="./GioHang.html"><i class="fa fa-shopping-cart"></i></a></div>
+        </div>
+    </div>
+    <div class="headerstyle onlyshowweb">
+        <div class="container d-flex">
+            <ul class="d-flex headermenu">
+                <li class="header-txt nav-hover"><a href="./DanhSachSP.html?id=HMV">HÀNG MỚI VỀ</a></li>
+                <li class="header-txt nav-hover"><a href="./DanhSachSP.html?id=NHN">NƯỚC HOA NAM</a></li>
+                <li class="header-txt nav-hover"><a href="./DanhSachSP.html?id=NHNU">NƯỚC HOA NỮ</a></li>
+                <li class="header-txt nav-hover" data-id="sub-nav-1"><a href="./DanhSachSP.html?id=TH">THƯƠNG HIỆU</a>
+                    <ul class="sub-nav-background" id="sub-nav-1" style="z-index: 2;display: none;">
+                        <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=SK">SK-II</a></li>
+                        <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=HUX">Huxley</a></li>
+                        <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=WON">Wonjin</a></li>
+                        <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=VAL">Valmont</a></li>
+                        <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=PES">Pestlo</a></li>
+                    </ul>
+                </li>
+                <li class="header-txt nav-hover"><a href="./DanhSachSP.html?id=SPKM">SẢN PHẨM KHUYẾN MÃI</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="isshowmobile" style="position: fixed; width: 100%;  z-index: 99;">
+        <div class="header-menu-mb">
+            <div style="margin: auto;">
+                <a><span id="ham-th-list" style="font-size: 25px;" class="glyphicon glyphicon-th-list"></span></a>
+            </div>
+            <a href="./TrangChu.html"><img class="imgLogo" src="./images/LogoNuocHoa.png"></a>
+            <div style="margin: auto;">
+                <div class="input-group d-flex">
+                    <div class="form-outline">
+                        <input id="search-focus" type="search" id="form1" class="form-control input-search"
+                            placeholder="Tìm kiếm" />
+                    </div>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div style="margin: auto;"><a href="./DangNhap.html"><i style="font-size:25px;" class="fa fa-user"></i></a>
+            </div>
+            <div style="margin: auto;"><a href="./GioHang.html"><i style="font-size:25px;"
+                        class="fa fa-shopping-cart"></i></a></div>
+        </div>
+        <div class="menu-mb" id="menu-mb" style="display: none;">
+            <ul class="headermenu-mb">
+                <li class="menu-mobile"><a href="./DanhSachSP.html?id=HMV">HÀNG MỚI VỀ</a></li>
+                <li class="menu-mobile"><a href="./DanhSachSP.html?id=NHM">NƯỚC HOA NAM</a></li>
+                <li class="menu-mobile"><a href="./DanhSachSP.html?id=NHNU">NƯỚC HOA NỮ</a></li>
+                <li class="menu-mobile" data-id="sub-nav-2"><a href="./DanhSachSP.html?id=TH">THƯƠNG HIỆU</a><i
+                        style="float: right; display: none;" class="fa fa-chevron-up chevron-up-mn"></i><i
+                        style="float: right; display: block;" class="fa fa-chevron-down chevron-dow-mn"></i>
+                </li>
+                <ul class="sub-menu-mb" id="sub-nav-2" style="display: none;">
+                    <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=SK">SK-II</a></li>
+                    <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=HUX">Huxley</a></li>
+                    <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=WON">Wonjin</a></li>
+                    <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=VAL">Valmont</a></li>
+                    <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=PES">Pestlo</a></li>
+                </ul>
+                <li class="menu-mobile"><a href="./DanhSachSP.html?id=SPKM">SẢN PHẨM KHUYẾN MÃI</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="isshowmobile" style="height: 50px;"></div>
+
+    </div>
+    <div class="container">
+        <div class="fx-detail" style="margin: 20px;">
+            <div style="width:50%">
+                <div class="d-flex" style="background-color: #f9fafb; padding: 10px; margin: 5px;">
+                    <img src="./images/bat-mi-y-nghia-khi-chon-nuoc-hoa-lam-qua-tang-1621909997-dc79d1.jpg"
+                        style="width: 120px;">
+                    <div style="width: 80%;margin-left: 10px;">
+                        <div>Nước Hoa Mini DIOR MISS DIOR EDP 5ml</div>
+                        <div>Size: 200ml</div>
+                        <div>Số lượng: <input type="number" value="1" style="width:50px;" data-price="1200000"
+                                id="input1"></div>
+                        <div>Giá: <span>1,200,000</span></div>
+                    </div>
+                </div>
+                <div class="d-flex" style="background-color: #f9fafb; padding: 10px;margin: 5px;">
+                    <img src="./images/joy-by-jean-patou--co-gai-vui-tre-nang-dong-moi-ngay-1621915418-284244.jpg"
+                        style="width: 120px;">
+                    <div style="width: 80%;margin-left: 10px;">
+                        <div>Nước Hoa Mini DIOR MISS DIOR EDP 5ml</div>
+                        <div>Size: 200ml</div>
+                        <div>Số lượng: <input type="number" value="1" style="width:50px;" data-price="1800000"
+                                id="input2"></div>
+                        <div>Giá: <span>1,800,000</span></div>
+                    </div>
+                </div>
+                <div>
+                    <table style="width: 100%;
+                    font-size: 17px;
+                    margin: 10px;">
+                        <tr>
+                            <th>Thành tiền:</th>
+                            <th><span id="amount">3,000,000</span> VND</th>
+                        </tr>
+                        <tr>
+                            <th>Phí ship: </th>
+                            <th><span id="ship">30,000</span> VND</th>
+                        </tr>
+                        <tr>
+                            <th>Tổng tiền thanh toán:</th>
+                            <th><span id="totalamount">3,000,000</span> VND</th>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div style="width:50%; border: 1px solid #f4772e;">
+                <div style="padding: 10px;">
+                    <h3 style="text-align: center;">THÔNG TIN NHẬN HÀNG</h3>
+                    <div class="d-flex form-group"><span style="width: 110px;align-self: center;">Họ tên:</span>
+                        <input class="form-control input-form-control" id="name" type="text" maxlength="50">
+                    </div>
+                    <div class="d-flex form-group"><span style="width: 110px;align-self: center;">Số điện thoại:</span>
+                        <input class="form-control input-form-control" id="phone" type="text" maxlength="50">
+                    </div>
+                    <div class="d-flex form-group"><span style="width: 110px;align-self: center;">Email:</span> <input
+                            class="form-control input-form-control" id="Email" type="text" maxlength="50"></div>
+                    <div class="d-flex form-group">
+                        <select class="form-control" id="tinhop" name="tinhop">
+                            <option class="tinhThanhOption" data-id="0" data-shippingcost="0" selected >--Chọn tỉnh thành--
+                            </option>
+                            <option class="tinhThanhOption" data-id="50" data-shippingcost="20000">Hồ Chí Minh</option>
+                            <option class="tinhThanhOption" data-id="72" data-shippingcost="50000">Bà Rịa - Vũng Tàu</a>
+                            <option class="tinhThanhOption" data-id="61" data-shippingcost="30000">Bình Dương</a>
+                            <option class="tinhThanhOption" data-id="69" data-shippingcost="30000">Cà Mau</a>
+                            <option class="tinhThanhOption" data-id="65" data-shippingcost="30000">Cần Thơ</a>
+                            <option class="tinhThanhOption" data-id="47" data-shippingcost="30000">Đắk Lắk</a>
+                            <option class="tinhThanhOption" data-id="43" data-shippingcost="30000">Đà Nẵng</a>
+                            <option class="tinhThanhOption" data-id="60" data-shippingcost="30000">Đồng Nai</a>
+                            <option class="tinhThanhOption" data-id="79" data-shippingcost="30000">Khánh Hòa</a>
+                            <option class="tinhThanhOption" data-id="68" data-shippingcost="30000">Kiên Giang</a>
+                            <option class="tinhThanhOption" data-id="49" data-shippingcost="30000">Lâm Đồng</a>
+                            <option class="tinhThanhOption" data-id="63" data-shippingcost="30000">Tiền Giang</a>
+                            <option class="tinhThanhOption" data-id="67" data-shippingcost="30000">An Giang</a>
+                            <option class="tinhThanhOption" data-id="13" data-shippingcost="50000">Bắc Giang</a>
+                            <option class="tinhThanhOption" data-id="97" data-shippingcost="50000">Bắc Kạn</a>
+                            <option class="tinhThanhOption" data-id="94" data-shippingcost="30000">Bạc Liêu</a>
+                            <option class="tinhThanhOption" data-id="99" data-shippingcost="50000">Bắc Ninh</a>
+                            <option class="tinhThanhOption" data-id="71" data-shippingcost="30000">Bến Tre</a>
+                            <option class="tinhThanhOption" data-id="77" data-shippingcost="50000">Bình Định</a>
+                            <option class="tinhThanhOption" data-id="93" data-shippingcost="30000">Bình Phước</a>
+                            <option class="tinhThanhOption" data-id="86" data-shippingcost="30000">Bình Thuận</a>
+                            <option class="tinhThanhOption" data-id="11" data-shippingcost="50000">Cao Bằng</a>
+                            <option class="tinhThanhOption" data-id="48" data-shippingcost="30000">Đắk Nông</a>
+                            <option class="tinhThanhOption" data-id="27" data-shippingcost="50000">Điện Biên</a>
+                            <option class="tinhThanhOption" data-id="66" data-shippingcost="30000">Đồng Tháp</a>
+                            <option class="tinhThanhOption" data-id="81" data-shippingcost="30000">Gia Lai</a>
+                            <option class="tinhThanhOption" data-id="23" data-shippingcost="50000">Hà Giang</a>
+                            <option class="tinhThanhOption" data-id="34" data-shippingcost="50000">Hải Dương</a>
+                            <option class="tinhThanhOption" data-id="15" data-shippingcost="50000">Hải Phòng</a>
+                            <option class="tinhThanhOption" data-id="90" data-shippingcost="50000">Hà Nam</a>
+                            <option class="tinhThanhOption" data-id="29" data-shippingcost="50000">Hà Nội</a>
+                            <option class="tinhThanhOption" data-id="38" data-shippingcost="50000">Hà Tĩnh</a>
+                            <option class="tinhThanhOption" data-id="95" data-shippingcost="30000">Hậu Giang</a>
+                            <option class="tinhThanhOption" data-id="28" data-shippingcost="50000">Hòa Bình</a>
+                            <option class="tinhThanhOption" data-id="89" data-shippingcost="50000">Hưng Yên</a>
+                            <option class="tinhThanhOption" data-id="82" data-shippingcost="30000">Kon Tum</a>
+                            <option class="tinhThanhOption" data-id="25" data-shippingcost="50000">Lai Châu</a>
+                            <option class="tinhThanhOption" data-id="12" data-shippingcost="50000">Lạng Sơn</a>
+                            <option class="tinhThanhOption" data-id="24" data-shippingcost="50000">Lào Cai</a>
+                            <option class="tinhThanhOption" data-id="62" data-shippingcost="30000">Long An</a>
+                            <option class="tinhThanhOption" data-id="18" data-shippingcost="50000">Nam Định</a>
+                            <option class="tinhThanhOption" data-id="37" data-shippingcost="50000">Nghệ An</a>
+                            <option class="tinhThanhOption" data-id="35" data-shippingcost="50000">Ninh Bình</a>
+                            <option class="tinhThanhOption" data-id="85" data-shippingcost="30000">Ninh Thuận</a>
+                            <option class="tinhThanhOption" data-id="19" data-shippingcost="50000">Phú Thọ</a>
+                            <option class="tinhThanhOption" data-id="78" data-shippingcost="50000">Phú Yên</a>
+                            <option class="tinhThanhOption" data-id="73" data-shippingcost="50000">Quảng Bình</a>
+                            <option class="tinhThanhOption" data-id="92" data-shippingcost="50000">Quảng Nam</a>
+                            <option class="tinhThanhOption" data-id="76" data-shippingcost="50000">Quảng Ngãi</a>
+                            <option class="tinhThanhOption" data-id="14" data-shippingcost="50000">Quảng Ninh</a>
+                            <option class="tinhThanhOption" data-id="74" data-shippingcost="50000">Quảng Trị</a>
+                            <option class="tinhThanhOption" data-id="83" data-shippingcost="30000">Sóc Trăng</a>
+                            <option class="tinhThanhOption" data-id="26" data-shippingcost="50000">Sơn La</a>
+                            <option class="tinhThanhOption" data-id="70" data-shippingcost="30000">Tây Ninh</a>
+                            <option class="tinhThanhOption" data-id="17" data-shippingcost="50000">Thái Bình</a>
+                            <option class="tinhThanhOption" data-id="20" data-shippingcost="50000">Thái Nguyên</a>
+                            <option class="tinhThanhOption" data-id="36" data-shippingcost="50000">Thanh Hóa</a>
+                            <option class="tinhThanhOption" data-id="75" data-shippingcost="50000">Thừa Thiên - Huế</a>
+                            <option class="tinhThanhOption" data-id="84" data-shippingcost="30000">Trà Vinh</a>
+                            <option class="tinhThanhOption" data-id="22" data-shippingcost="50000">Tuyên Quang</a>
+                            <option class="tinhThanhOption" data-id="64" data-shippingcost="30000">Vĩnh Long</a>
+                            <option class="tinhThanhOption" data-id="88" data-shippingcost="50000">Vĩnh Phúc</a>
+                            <option class="tinhThanhOption" data-id="21" data-shippingcost="50000">Yên Bái</a>
+                        </select>
+                        <!-- <select class="form-control" id="quanhuyen">
+                            <option class="tinhThanhOption" data-id="0" data-shippingcost="0">--Chọn quận huyện--
+                            </option>
+                        </select> -->
+                    </div>
+                    <textarea class="form-group form-control" id="address" placeholder="Địa chỉ"></textarea>
+                    <h3 style="text-align: center;">HÌNH THỨC NHẬN HÀNG</h3>
+                    <div class="form-group">
+                        <input type="radio" name="ghtc" id="ghtc" checked><Label>&nbsp; Giao hàng tiêu chuẩn nhận hàng
+                            từ 2 - 3 ngày</Label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="ghtc" id="ghn"><Label>&nbsp; Giao hàng nhanh nhận hàng trong
+                            ngày</Label>
+                    </div>
+                    <textarea class="form-group form-control" placeholder="Ghi chú"></textarea>
+                    <button class="btn-cart-cod" id="paycod">THANH TOÁN KHI NHẬN HÀNG</button>
+                    <button class="btn-cart-cod" id="payvisa">VISA/MASTER CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div style="margin: 20px 0px;display: flex;">
+                <div class="with33d3">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <img class="img-ft-conect" src="./images/facebook-icon_v2.png">
+                    <img class="img-ft-conect" src="./images/instagram-icon_v2.png">
+                    <img class="img-ft-conect" src="./images/zalo-icon_v2.png">
+                    <img class="img-ft-conect" src="./images/youtobe-icon_v2.png">
+                </div>
+                <div class="with33d3">
+                    <h4>Hổ trợ thanh toán</h4>
+                    <img class="img-ft-pay" src="./images/master-icon_v2.png">
+                    <img class="img-ft-pay" src="./images/visa-icon_v2.png">
+                    <img class="img-ft-pay" src="./images/atm-pay-icon_v2.png">
+                    <img class="img-ft-pay" src="./images/zalo-pay-icon_v2.png">
+                </div>
+                <div class="with33d3">
+                    <img class="img-ft-bct" src="./images/BoCongThuong.png.jpg">
+                    <div>Trụ sở chính: 14A Nguyễn Văn Bảo, P.2, Q.Gò Vấp, Tp.HCM</div>
+                    <div>Mã số thuế: 0123456789</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

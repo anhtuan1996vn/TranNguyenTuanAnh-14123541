@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>bai06</title>
+    <script>
+        function chanIM(path) {
+            document.getElementById("pic1").src = path;
+        }
+    </script>
+</head>
+<body>
+    <img src="../Images/apple.jpg" id="pic1"
+         onmouseover="chanIM('../Images/apple.jpg')"
+         onmouseout="chanIM('../Images/coffee.png')"/>
+</body>
+</html>

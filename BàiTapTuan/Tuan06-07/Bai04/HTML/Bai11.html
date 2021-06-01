@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bai11</title>
+    <script language="javascript" type="text/javascript">
+        var time;
+        function startTime() {
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('timer').innerHTML = h + ":" + m + ":" + s;
+            time = setTimeout(function () {
+                startTime();
+            },500);
+           
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+        function Stop() {            
+            clearTimeout(time);
+        }  
+        
+    </script>
+</head>
+<body >
+    <div id='timer'></div>
+    <input type="button" onclick="startTime()" value="Bật đồng hồ"/>
+    <input type="button"  onclick="Stop()" value="Dừng đồng hồ" />
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bai13</title>
+    <script language="javascript" type="text/javascript">
+        var idq;
+        function change() {
+            var color = new Array();
+            color[0] = "blue";
+            color[1] = "red";
+            color[2] = "green";
+            color[3] = "yellow";
+            color[4] = "pikn";
+            color[5] = "black";
+            var i = Math.round(Math.random() * 5);
+            document.bgColor = color[i];
+            idq = setTimeout("change()", 100);
+        }
+        function stop() {
+            clearTimeout(idq);
+        }
+    </script>
+            </head>
+<body>
+    <input type="button" name="b1" value="Play" onclick="change()" />
+    <input type="button" name="b2" value="Stop" onclick="stop()" />
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bai03</title>
+    <script>
+        function hienthi()
+        {
+            var ten = prompt("Ten: ", "HaoVo");
+            var namsinh = prompt("Nam Sinh: ", "1996");
+            var d=new Date();
+            var s=d.getFullYear();
+            var n=s-namsinh;
+            document.writeln("Chao ban: " + ten+ "<br>");
+            document.writeln("Ban da: " + n + " tuoi roi");
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="HienThi" onclick="hienthi();"/>
+</body>
+</html>

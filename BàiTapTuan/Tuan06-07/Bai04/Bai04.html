@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bai04</title>
+    <script>
+        function luonggiac() {
+            document.writeln("<table border ='1' width='100%' ");
+            document.writeln("<tr> <td>Degress</td> <td>Sin(d)</td> <td>Cos(d)</td></tr>");
+            for (var i = 0; i <= 180; i += 15) {
+                document.writeln("<tr>");
+                document.writeln("<td>" + i + "</td>");
+                document.writeln("<td>" + (Math.sin(i) * Math.PI) / 180 + "</td>");
+                document.writeln("<td>" + (Math.cos(i) * Math.PI) / 180 + "</td>");
+            }
+            document.writeln("</tr>");
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="LuongGiac" onclick="luonggiac();" />
+</body>
+</html>

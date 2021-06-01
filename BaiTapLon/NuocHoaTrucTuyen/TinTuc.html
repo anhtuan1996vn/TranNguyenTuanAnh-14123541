@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="description" content="Trang chủ">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Trần Nguyễn Tuấn Anh">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/Stylesheet.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <div class="headerstyle">
+    <div class="container d-flex onlyshowweb">
+      <a href="./TrangChu.html"><img class="imgLogo" src="./images/LogoNuocHoa.png"></a>
+      <div style="margin: auto;">
+        <div class="input-group d-flex">
+          <div class="form-outline">
+            <input id="search-focus" type="search" id="form1" class="form-control" placeholder="Tìm kiếm" />
+          </div>
+          <button type="button" class="btn btn-primary">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <ul class="d-flex headermenu">
+        <li class="header-txt"><a href="./TrangChu.html">TRANG CHỦ</a></li>
+        <li class="header-txt"><a href="./GioiThieu.html">GIỚI THIỆU</a></li>
+        <li class="header-txt"><a href="./ChinhSach.html">CHÍNH SÁCH BẢO HÀNH</a></li>
+        <li class="header-txt"><a href="./TinTuc.html">TIN TỨC</a></li>
+      </ul>
+      <div class="header-login"><a href="./DangNhap.html">Đăng Nhập</a> | <a href="./DangKy.html">Đăng ký</a></div>
+      <div style="margin: auto;"><a href="./GioHang.html"><i class="fa fa-shopping-cart"></i></a></div>
+    </div>
+  </div>
+  <div class="headerstyle onlyshowweb">
+    <div class="container d-flex">
+      <ul class="d-flex headermenu">
+        <li class="header-txt nav-hover"><a href="./DanhSachSP.html?id=HMV">HÀNG MỚI VỀ</a></li>
+        <li class="header-txt nav-hover"><a href="./DanhSachSP.html?id=NHN">NƯỚC HOA NAM</a></li>
+        <li class="header-txt nav-hover"><a href="./DanhSachSP.html?id=NHNU">NƯỚC HOA NỮ</a></li>
+        <li class="header-txt nav-hover" data-id="sub-nav-1"><a href="./DanhSachSP.html?id=TH">THƯƠNG HIỆU</a>
+          <ul class="sub-nav-background" id="sub-nav-1" style="z-index: 2;display: none;">
+            <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=SK">SK-II</a></li>
+            <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=HUX">Huxley</a></li>
+            <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=WON">Wonjin</a></li>
+            <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=VAL">Valmont</a></li>
+            <li style="margin: 5px 25px 6px 5px;"><a href="./DanhSachSP.html?id=PES">Pestlo</a></li>
+          </ul>
+        </li>
+        <li class="header-txt nav-hover"><a href="./DanhSachSP.html?id=SPKM">SẢN PHẨM KHUYẾN MÃI</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="isshowmobile" style="position: fixed; width: 100%;  z-index: 99;">
+    <div class="header-menu-mb">
+      <div style="margin: auto;">
+        <a><span id="ham-th-list" style="font-size: 25px;" class="glyphicon glyphicon-th-list"></span></a>
+      </div>
+      <a href="./TrangChu.html"><img class="imgLogo" src="./images/LogoNuocHoa.png"></a>
+      <div style="margin: auto;">
+        <div class="input-group d-flex">
+          <div class="form-outline">
+            <input id="search-focus" type="search" id="form1" class="form-control input-search"
+              placeholder="Tìm kiếm" />
+          </div>
+          <button type="button" class="btn btn-primary">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div style="margin: auto;"><a href="./DangNhap.html"><i style="font-size:25px;" class="fa fa-user"></i></a></div>
+      <div style="margin: auto;"><a href="./GioHang.html"><i style="font-size:25px;"
+            class="fa fa-shopping-cart"></i></a></div>
+    </div>
+    <div class="menu-mb" id="menu-mb" style="display: none;">
+      <ul class="headermenu-mb">
+        <li class="menu-mobile"><a href="./DanhSachSP.html?id=HMV">HÀNG MỚI VỀ</a></li>
+        <li class="menu-mobile"><a href="./DanhSachSP.html?id=NHM">NƯỚC HOA NAM</a></li>
+        <li class="menu-mobile"><a href="./DanhSachSP.html?id=NHNU">NƯỚC HOA NỮ</a></li>
+        <li class="menu-mobile" data-id="sub-nav-2"><a href="./DanhSachSP.html?id=TH">THƯƠNG HIỆU</a><i style="float: right; display: none;"
+            class="fa fa-chevron-up chevron-up-mn"></i><i style="float: right; display: block;"
+            class="fa fa-chevron-down chevron-dow-mn"></i>
+        </li>
+        <ul class="sub-menu-mb" id="sub-nav-2" style="display: none;">
+          <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=SK">SK-II</a></li>
+          <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=HUX">Huxley</a></li>
+          <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=WON">Wonjin</a></li>
+          <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=VAL">Valmont</a></li>
+          <li class="sub-menu-item-mb"><a href="./DanhSachSP.html?id=PES">Pestlo</a></li>
+        </ul>
+        <li class="menu-mobile"><a href="./DanhSachSP.html?id=SPKM">SẢN PHẨM KHUYẾN MÃI</a></li>
+      </ul>
+    </div>
+  </div>
+  <div>
+  </div>
+  <div class="isshowmobile" style="height: 50px;"></div>
+  <div class="container">
+    <div style="font-size: 20px;padding: 10px; color: #555;">
+      <a style="color: #555;" href="./TrangChu.html">Trang chủ</a> >
+      <a style="color: #555;" href="#">Tin tức</a>
+    </div>
+    <div class="d-flex" style="padding: 5px;">
+      <div class="with20-img-tt">
+        <img src="./images/nuoc-hoa-estee-lauder-pleasure-tu-my-chinh-hieu-1622082582-abae15.jpg" style="width: 100%;">
+      </div>
+      <div class="with80-img-tt">
+        <a>Nước hoa Estee Lauder Pleasure từ Mỹ chính hiệu</a>
+        <p>Tìm mua nước hoa estee lauder pleasure 100ml chính hãng ở Sài Gòn sẽ không còn là một điều khó khăn nữa khi
+          đã...</p>
+        <i class="txt-fot1">09:49 27-05-2021 | 142 lượt xem</i>
+      </div>
+    </div>
+    <div class="d-flex" style="padding: 5px;">
+      <div class="with20-img-tt">
+        <img src="./images/review-nhung-mui-nuoc-hoa-cho-nu-duoc-ua-chuong-nhat-1621999954-ff11dd.jpg" style="width: 100%;">
+      </div>
+      <div class="with80-img-tt">
+        <a>Review những mùi nước hoa cho nữ được ưa chuộng nhất</a>
+        <p>TNếu bạn là một tín đồ nước hoa thì không thể bỏ qua nước hoa cho nữ được ưa chuộng nhất được review...</p>
+        <i class="txt-fot1">10:32 26-05-2021 | 170 lượt xem</i>
+      </div>
+    </div>
+    <div class="d-flex"style="padding: 5px;">
+      <div class="with20-img-tt">
+        <img src="./images/joy-by-jean-patou--co-gai-vui-tre-nang-dong-moi-ngay-1621915418-284244.jpg" style="width: 100%;">
+      </div>
+      <div class="with80-img-tt">
+        <a>Joy by Jean Patou | Cô gái vui trẻ năng động mỗi ngày</a>
+        <p>Nước hoa nữ Joy Forever Eau de Toilette phù hợp với người trên 25 tuổi. Đây là dòng nước hoa Jean Patou này có...</p>
+        <i class="txt-fot1">11:12 25-05-2021 | 156 lượt xem</i>
+      </div>
+    </div>
+    <div class="d-flex" style="padding: 5px;">
+      <div class="with20-img-tt">
+        <img src="./images/bat-mi-y-nghia-khi-chon-nuoc-hoa-lam-qua-tang-1621909997-dc79d1.jpg" style="width: 100%;">
+      </div>
+      <div class="with80-img-tt">
+        <a>Bật mí ý nghĩa khi chọn nước hoa làm quà tặng?</a>
+        <p>Bạn có thực sự biết ý nghĩa của nước hoa là gì, ý nghĩa tặng nước hoa cho bạn trai, bạn gái là thế nào?...</p>
+        <i class="txt-fot1">009:33 25-05-2021 | 186 lượt xem</i>
+      </div>
+    </div>
+    <div class="d-flex" style="padding: 5px;">
+      <div class="with20-img-tt">
+        <img src="./images/nuoc-hoa-nu-nao-bam-mui-lau-nhat-tren-12-gio-1621829412-f77ac0.jpg" style="width: 100%;">
+      </div>
+      <div class="with80-img-tt">
+        <a>Nước hoa nữ nào bám mùi lâu nhất trên 12 giờ?</a>
+        <p>Hiện nay nước hoa nữ 80% là có độ lưu hương từ 3 - 6 tiếng và lưu hương từ 12 tiếng trở lên chỉ trong...</p>
+        <i class="txt-fot1">10:49 24-05-2021 | 216 lượt xem</i>
+      </div>
+    </div>
+    <div class="d-flex" style="padding: 5px;">
+      <div class="with20-img-tt">
+        <img src="./images/tiet-lo-loai-nuoc-hoa-huong-go-cho-nam-dang-mua-1621827504-e897f9.jpg" style="width: 100%;">
+      </div>
+      <div class="with80-img-tt">
+        <a>Tiết lộ loại nước hoa hương gỗ cho nam đáng mua</a>
+        <p>Nếu phái đẹp thường lựa chọn hương thơm ngọt ngào của kẹo thì phái mạnh thường lựa chọn nước hoa...</p>
+        <i class="txt-fot1">10:38 24-05-2021 | 186 lượt xem</i>
+      </div>
+    </div>
+    <div class="d-flex" style="padding: 5px;">
+      <div class="with20-img-tt">
+        <img src="./images/nuoc-hoa-mui-go--huong-thom-danh-cho-phu-nu-moi-thoi-dai-1621654028-58fcb0.jpg" style="width: 100%;">
+      </div>
+      <div class="with80-img-tt">
+        <a>Nước hoa mùi gỗ - Hương thơm dành cho phụ nữ mọi thời đại</a>
+        <p>Nếu như những cô nàng nữ tính thường tìm kiếm cho mình những nốt hương ngọt ngào của trái cây, hoa cỏ thì...</p>
+        <i class="txt-fot1">10:27 22-05-2021 | 191 lượt xem</i>
+      </div>
+    </div>
+    <div class="d-flex" style="padding: 5px;">
+      <div class="with20-img-tt">
+        <img src="./images/top-10-nuoc-hoa-nam-ban-chay-nhat-2021-1621826342-51612a.jpg" style="width: 100%;">
+      </div>
+      <div class="with80-img-tt">
+        <a>Top 10 nước hoa nam bán chạy nhất 2021</a>
+        <p>Với những thương hiệu được các chàng yêu thích lựa chọn là minh chứng cho quá trình chinh phục nam giới bền...</p>
+        <i class="txt-fot1">10:17 24-05-2021 | 203 lượt xem</i>
+      </div>
+    </div>
+
+    <h2 style="text-align: center;">SẢN PHẦM NỔI BẬT</h2>
+    <div class="container">
+      <div class="item-cover">
+        <a href="./ChiTiet.html">
+          <img class="img-item" src="./images/nuoc-hoa-nam-dior-sauvage-eau-de-toilette-1619230882-a98ce8.jpg">
+          <div class="item-name">Nước Hoa Dior Sauvage EDT</div>
+          <div><span class="price-item">2.150.000 VND</span><span class="price-old-item">2.690.000 VND</span></div>
+          <div class="item-add-cart">THÊM VÀO GIỎ HÀNG</div>
+        </a>
+      </div>
+      <div class="item-cover">
+        <a href="./ChiTiet.html">
+          <img class="img-item"
+            src="./images/nuoc-hoa-al-haramain-perfumes-amber-oud-gold-edition-1618375359-14e7ea.jpg">
+          <div class="item-name">Nước Hoa Al Haramain Perfumes Amber Oud Gold</div>
+          <div><span class="price-item">2.150.000 VND</span><span class="price-old-item">2.690.000 VND</span></div>
+          <div class="item-add-cart">THÊM VÀO GIỎ HÀNG</div>
+        </a>
+      </div>
+      <div class="item-cover">
+        <a href="./ChiTiet.html">
+          <img class="img-item"
+            src="./images/nuoc-hoa-maison-francis-kurkdjian-baccarat-rouge-540-edp-1616571220-aaaba5.jpg">
+          <div class="item-name">Nước Hoa Maison Francis Kurkdjian Baccarat Rouge</div>
+          <div><span class="price-item">2.150.000 VND</span><span class="price-old-item">2.690.000 VND</span></div>
+          <div class="item-add-cart">THÊM VÀO GIỎ HÀNG</div>
+        </a>
+      </div>
+      <div class="item-cover">
+        <a href="./ChiTiet.html">
+          <img class="img-item" src="./images/nuoc-hoa-chanel-coco-mademoiselle-edp-1616568480-f647bc.jpg">
+          <div class="item-name">Nước Hoa Chanel Coco Mademoiselle EDP</div>
+          <div><span class="price-item">2.150.000 VND</span><span class="price-old-item">2.690.000 VND</span></div>
+          <div class="item-add-cart">THÊM VÀO GIỎ HÀNG</div>
+        </a>
+      </div>
+      <div class="item-cover">
+        <a href="./ChiTiet.html">
+          <img class="img-item" src="./images/nuoc-hoa-chanel-bleu-de-chanel-eau-de-toilette-1616560794-ab8830.jpg">
+          <div class="item-name">Nước Hoa Chanel Bleu de Chanel Eau de Toilette</div>
+          <div><span class="price-item">2.150.000 VND</span><span class="price-old-item">2.690.000 VND</span></div>
+          <div class="item-add-cart">THÊM VÀO GIỎ HÀNG</div>
+        </a>
+      </div>
+      <div class="item-cover">
+        <a href="./ChiTiet.html">
+          <img class="img-item" src="./images/nuoc-hoa-kilian-good-girl-gone-bad-1616557544-5d7c42.jpg">
+          <div class="item-name">Nước Hoa Kilian Good Girl Gone Bad</div>
+          <div><span class="price-item">2.150.000 VND</span><span class="price-old-item">2.690.000 VND</span></div>
+          <div class="item-add-cart">THÊM VÀO GIỎ HÀNG</div>
+        </a>
+      </div>
+      <div class="item-cover">
+        <a href="./ChiTiet.html">
+          <img class="img-item" src="./images/nuoc-hoa-le-labo-another-13-1608365632-939424.jpg">
+          <div class="item-name">Nước Hoa Le Labo Another 13</div>
+          <div><span class="price-item">2.150.000 VND</span><span class="price-old-item">2.690.000 VND</span></div>
+          <div class="item-add-cart">THÊM VÀO GIỎ HÀNG</div>
+        </a>
+      </div>
+      <div class="item-cover">
+        <a href="./ChiTiet.html">
+          <img class="img-item" src="./images/nuoc-hoa-le-labo-santal-33-50ml-1608364390-0e2ebc.jpg">
+          <div class="item-name">Nước Hoa Le Labo Santal 33</div>
+          <div><span class="price-item">2.150.000 VND</span><span class="price-old-item">2.690.000 VND</span></div>
+          <div class="item-add-cart">THÊM VÀO GIỎ HÀNG</div>
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div style="margin: 20px 0px;display: flex;">
+          <div class="with33d3">
+            <h4>Kết nối với chúng tôi</h4>
+            <img class="img-ft-conect" src="./images/facebook-icon_v2.png">
+            <img class="img-ft-conect" src="./images/instagram-icon_v2.png">
+            <img class="img-ft-conect" src="./images/zalo-icon_v2.png">
+            <img class="img-ft-conect" src="./images/youtobe-icon_v2.png">
+          </div>
+          <div class="with33d3">
+            <h4>Hổ trợ thanh toán</h4>
+            <img class="img-ft-pay" src="./images/master-icon_v2.png">
+            <img class="img-ft-pay" src="./images/visa-icon_v2.png">
+            <img class="img-ft-pay" src="./images/atm-pay-icon_v2.png">
+            <img class="img-ft-pay" src="./images/zalo-pay-icon_v2.png">
+          </div>
+          <div class="with33d3">
+            <img class="img-ft-bct" src="./images/BoCongThuong.png.jpg">
+            <div>Trụ sở chính: 14A Nguyễn Văn Bảo, P.2, Q.Gò Vấp, Tp.HCM</div>
+            <div>Mã số thuế: 0123456789</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

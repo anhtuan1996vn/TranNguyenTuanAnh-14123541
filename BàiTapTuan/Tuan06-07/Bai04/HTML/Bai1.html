@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bai01</title>
+    <script>
+        function hinhchunhat() {
+            var n=parseFloat(prompt("Nhập chiều dài HCN:","10"));
+            var m = parseFloat(prompt("nhập chiều rộng HCN:", "8"));
+            document.writeln("Chu vi HCM: " + ((m + n) * 2)+"<br>");
+            document.writeln("Dien tich HCM: " + (m * n));
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="TinhChuViDienTichHCN" onclick="hinhchunhat();" />
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bai08</title>
+    <script language="javascript" type="text/javascript">
+        function checkname()
+        {
+            var m=""
+            if(event.keyCode>=48 && event.keyCode<=57)
+            {
+                var st = f1.txtname.value
+                f1.txtname.value = st.substring(0, st.length - 1);
+                window.event.keyCode = 0;
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 align="center">Using windown object</h2>
+    <form name="f1">
+        <table border="1" align="center">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="txtname" width="40" onkeyup="checkname()""</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
